@@ -1,5 +1,4 @@
 #include <string.h>
-#include <limits.h>
 #include "hack-sstu-prog.h"
 
 void sort(int *mass, int k)
