@@ -96,6 +96,22 @@ int set_cur_array(int *b, int k)
     return k;
 }
 
+int max(int *mas, int k)
+{
+    /* Функция нахождения максимума в массиве Аналог функции max() в Python.
+    :max - Указатель на массив;
+    :k - Длинна массива;
+    */
+    long long int maxi = INT_MIN;
+    for (int i = 0; i < k; i++)
+    {
+        if (mas[i] > maxi)
+        {
+            maxi = mas[i];
+        }
+    }
+    return maxi;
+  
 int min(int *mas, int k)
 {
     /* Функция нахождения минимума в массиве Аналог функции min() в Python.
