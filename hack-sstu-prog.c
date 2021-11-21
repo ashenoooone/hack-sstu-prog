@@ -68,3 +68,29 @@ int *set_new_array(int *mass, int k)
     a = (int *)realloc(a, sizeof(int) * len);
     return a;
 }
+
+int set_cur_array(int *b, int k)
+{
+    /* Ф-ция удаляет из массива повторяющиеся элементы.
+    Аналог ф-ции set() из python.
+    Возвращает длину мн-ства.
+    :b - указатель на массив;
+    :k - длина массива;
+    */
+    for (int i = 1; i < k; i++)
+    {
+        for (int r = i + 1; r < k; r++)
+        {
+            if (b[i] == b[r])
+            {
+                for (int g = r; g < k; g++)
+                {
+                    b[g] = b[g + 1];
+                }
+                k--;
+                r--;
+            }
+        }
+    }
+    return k;
+}
