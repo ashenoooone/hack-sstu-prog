@@ -1,1 +1,0 @@
-# hack-sstu-prog

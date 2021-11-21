@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		742FFCB4274A1E36006AA705 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 742FFCB3274A1E36006AA705 /* main.c */; };
-		742FFCBB274A1F83006AA705 /* hack-sstu-prog.c in Sources */ = {isa = PBXBuildFile; fileRef = 742FFCBA274A1F83006AA705 /* hack-sstu-prog.c */; };
+		742FFCC3274A210E006AA705 /* hack-sstu-prog.c in Sources */ = {isa = PBXBuildFile; fileRef = 742FFCBF274A210E006AA705 /* hack-sstu-prog.c */; };
+		742FFCC4274A210E006AA705 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 742FFCC2274A210E006AA705 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +25,10 @@
 
 /* Begin PBXFileReference section */
 		742FFCB0274A1E36006AA705 /* sstu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sstu; sourceTree = BUILT_PRODUCTS_DIR; };
-		742FFCB3274A1E36006AA705 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		742FFCBA274A1F83006AA705 /* hack-sstu-prog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "hack-sstu-prog.c"; sourceTree = "<group>"; };
-		742FFCBC274A1F92006AA705 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		742FFCBD274A1F92006AA705 /* hack-sstu-prog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hack-sstu-prog.h"; sourceTree = "<group>"; };
+		742FFCBF274A210E006AA705 /* hack-sstu-prog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "hack-sstu-prog.c"; sourceTree = "<group>"; };
+		742FFCC0274A210E006AA705 /* hack-sstu-prog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hack-sstu-prog.h"; sourceTree = "<group>"; };
+		742FFCC1274A210E006AA705 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		742FFCC2274A210E006AA705 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,10 @@
 		742FFCA7274A1E36006AA705 = {
 			isa = PBXGroup;
 			children = (
-				742FFCB2274A1E36006AA705 /* sstu */,
+				742FFCBF274A210E006AA705 /* hack-sstu-prog.c */,
+				742FFCC0274A210E006AA705 /* hack-sstu-prog.h */,
+				742FFCC2274A210E006AA705 /* main.c */,
+				742FFCC1274A210E006AA705 /* README.md */,
 				742FFCB1274A1E36006AA705 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,17 +59,6 @@
 				742FFCB0274A1E36006AA705 /* sstu */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		742FFCB2274A1E36006AA705 /* sstu */ = {
-			isa = PBXGroup;
-			children = (
-				742FFCBD274A1F92006AA705 /* hack-sstu-prog.h */,
-				742FFCBC274A1F92006AA705 /* README.md */,
-				742FFCBA274A1F83006AA705 /* hack-sstu-prog.c */,
-				742FFCB3274A1E36006AA705 /* main.c */,
-			);
-			path = sstu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +118,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				742FFCB4274A1E36006AA705 /* main.c in Sources */,
-				742FFCBB274A1F83006AA705 /* hack-sstu-prog.c in Sources */,
+				742FFCC4274A210E006AA705 /* main.c in Sources */,
+				742FFCC3274A210E006AA705 /* hack-sstu-prog.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
