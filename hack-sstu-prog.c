@@ -1,4 +1,5 @@
 #include <string.h>
+#include <limits.h>
 #include "hack-sstu-prog.h"
 
 void sort(int *mass, int k)
@@ -93,4 +94,21 @@ int set_cur_array(int *b, int k)
         }
     }
     return k;
+}
+
+int min(int *mas, int k)
+{
+    /* Функция нахождения минимума в массиве Аналог функции min() в Python.
+    :mas - Указатель на массив;
+    :k - Длинна массива;
+    */
+    long long int mini = INT_MAX;
+    for (int i = 0; i < k; i++)
+    {
+        if (mas[i] < mini)
+        {
+            mini = mas[i];
+        }
+    }
+    return mini;
 }
