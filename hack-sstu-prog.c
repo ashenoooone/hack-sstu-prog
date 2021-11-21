@@ -40,7 +40,7 @@ int count_s(char *mass, char ch)
     return count;
 }
 
-int *set(int *mass, int k)
+int *set_new_array(int *mass, int k)
 {
     /* Ф-ция формирует новое множество из массива.
     Возвращает указатель на мн-ство.
