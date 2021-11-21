@@ -111,7 +111,8 @@ int max(int *mas, int k)
         }
     }
     return maxi;
-  
+}
+
 int min(int *mas, int k)
 {
     /* Функция нахождения минимума в массиве Аналог функции min() в Python.
