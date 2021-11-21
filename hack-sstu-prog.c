@@ -77,7 +77,7 @@ int set_cur_array(int *b, int k)
     :b - указатель на массив;
     :k - длина массива;
     */
-    for (int i = 1; i < k; i++)
+    for (int i = 0; i < k; i++)
     {
         for (int r = i + 1; r < k; r++)
         {
