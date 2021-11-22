@@ -7,7 +7,7 @@
 
 ### Методы библиотеки
 
-`void sort(int *mass, int k)` - пузырьковая сортировка.
-`int count_s(const char *mass, char ch)` - возвращает количество вхождений элемента в массив.
-`long long int max(const int *mass, int k)` - возвращает максимальный элемент массива.
-`long long int min (const int *mass, int k)` - возвращает минимальный элемент массива.
+`void sort(int *mass, int k)` - пузырьковая сортировка. <br />
+`int count_s(const char *mass, char ch)` - возвращает количество вхождений элемента в массив. <br />
+`long long int max(const int *mass, int k)` - возвращает максимальный элемент массива. <br />
+`long long int min (const int *mass, int k)` - возвращает минимальный элемент массива. <br />
