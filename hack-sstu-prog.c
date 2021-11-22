@@ -1,5 +1,6 @@
 #include <string.h>
 #include <limits.h>
+#include <stdlib.h>
 #include "hack-sstu-prog.h"
 
 void sort(int *mass, int k)
@@ -23,7 +24,7 @@ void sort(int *mass, int k)
     }
 }
 
-int count_s(char *mass, char ch)
+int count_s(const char *mass, char ch)
 {
     /* Аналог ондоименной функции из python.
      Возвращает количество вхождений элемента в массиве.
@@ -96,35 +97,37 @@ int set_cur_array(int *b, int k)
     return k;
 }
 
-int max(int *mas, int k)
+long long int max(const long long int *mass, int k)
 {
-    /* Функция нахождения максимума в массиве Аналог функции max() в Python.
-    :max - Указатель на массив;
-    :k - Длинна массива;
+    /* Функция нахождения максимума в массиве.
+     Аналог функции max() в Python.
+    :mas - указатель на массив;
+    :k - длинна массива;
     */
-    long long int maxi = INT_MIN;
+    long long int maxi = LONG_LONG_MIN;
     for (int i = 0; i < k; i++)
     {
-        if (mas[i] > maxi)
+        if (mass[i] > maxi)
         {
-            maxi = mas[i];
+            maxi = mass[i];
         }
     }
     return maxi;
 }
 
-int min(int *mas, int k)
+long long int min(const long long int *mass, int k)
 {
-    /* Функция нахождения минимума в массиве Аналог функции min() в Python.
-    :mas - Указатель на массив;
-    :k - Длинна массива;
+    /* Функция нахождения минимума в массиве.
+     Аналог функции min() в Python.
+    :mas - указатель на массив;
+    :k - длинна массива;
     */
-    long long int mini = INT_MAX;
+    long long int mini = LONG_LONG_MAX;
     for (int i = 0; i < k; i++)
     {
-        if (mas[i] < mini)
+        if (mass[i] < mini)
         {
-            mini = mas[i];
+            mini = mass[i];
         }
     }
     return mini;
