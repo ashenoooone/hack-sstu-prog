@@ -133,16 +133,20 @@ long long int min(const long long int *mass, int k)
     return mini;
 }
 
-int factorial(long long int x)
+char replace(char *s, int k, char b, char z)
 {
-    /* Функция нахождения факториала у числа.
-      Аналогов в Python нету.
-      :x - число для которого мы ищем факториал;
+    /* Функция замены одного символа на другой во всей строке.
+      Аналог функции replace() в Python.
+      :s - строка в которой нужно заменять символ;
+      :k - длинна этой строки;
+      :b - символ который нужно заменить;
+      :z - символ на который будем заменять;
     */
-    long long int res = 1;
-    for (int i = 1; i <= x; i++)
+    for (int i = 0; i < k; i++)
     {
-        res *= i;
+        if (s[i] = b)
+        {
+            s[i] = z;
+        }
     }
-    return res;
 }
