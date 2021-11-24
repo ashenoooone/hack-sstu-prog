@@ -133,14 +133,14 @@ long long int min(const long long int *mass, int k)
     return mini;
 }
 
-int sum(int *mas, int k)
+float fsum(float *mas, int k)
 {
-    /* Функция нахождения суммы всех элементов массива целочисленного типа.
+    /* Функция нахождения суммы всех элементов массива вещественного типа.
       Аналог функции sum() в Python.
       :mas - указатель на массив;
       :k - длинна массива;
     */
-    long long int res = 0;
+    float res = 0;
     for (int i = 0; i < k; i++)
     {
         res += mas[i];
