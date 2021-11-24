@@ -133,17 +133,16 @@ long long int min(const long long int *mass, int k)
     return mini;
 }
 
-float fsum(float *mas, int k)
+int factorial(long long int x)
 {
-    /* Функция нахождения суммы всех элементов массива вещественного типа.
-      Аналог функции sum() в Python.
-      :mas - указатель на массив;
-      :k - длинна массива;
+    /* Функция нахождения факториала у числа.
+      Аналогов в Python нету.
+      :x - число для которого мы ищем факториал;
     */
-    float res = 0;
-    for (int i = 0; i < k; i++)
+    long long int res = 1;
+    for (int i = 1; i <= x; i++)
     {
-        res += mas[i];
+        res *= i;
     }
     return res;
 }
