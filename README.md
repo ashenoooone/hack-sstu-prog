@@ -6,8 +6,12 @@
 3. В основной файл включить библиотеку командой `#include "hack-sstu-prog.h"`
 
 ### Методы библиотеки
-
-`void sort(int *mass, int k)` - пузырьковая сортировка. <br />
-`int count_s(const char *mass, char ch)` - возвращает количество вхождений элемента в массив. <br />
-`long long int max(const int *mass, int k)` - возвращает максимальный элемент массива. <br />
-`long long int min (const int *mass, int k)` - возвращает минимальный элемент массива. <br />
+#### Строки
+- `int count_s(const char *mass, char ch)` - возвращает количество вхождений элемента в массиве. <br />
+- `void reverse(char *mass)` - перестраивает элементы массива в обратном порядке. <br />
+- `void replace(char *mass, char old, char new)` - замена всех вхождений символа *old* на *new*. <br />
+- `void idDigit(char *mass)` - возвращает **true**, если есть хотя бы один символ или все символы являются цифрами, иначе **false**. Не путать с функцией *isdigit*! <br />
+#### Числа
+- `void sort(int *mass, int k)` - пузырьковая сортировка. <br />
+- `long long int max(const long long int *mass, int k)` - возвращает максимальный элемент массива. <br />
+- `long long int min (const long long int *mass, int k)` - возвращает минимальный элемент массива. <br />
