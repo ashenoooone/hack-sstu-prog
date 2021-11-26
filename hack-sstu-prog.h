@@ -1,10 +1,25 @@
 #ifndef HACK_SSTU_PROG_H
 #define HACK_SSTU_PROG_H
 
-void sort(int *mass, int k);
+// string methods
+
 int count_s(const char *mass, char ch);
-int *set_new_array(int *mass, int k);
-int set_cur_array(int *b, int k);
+void reverse(char *mass);
+void replace(char *mass, char old, char new);
+bool isDigit(char *mass);
+
+int *set_new_array(int *mass, int k); // add in docs
+int set_cur_array(int *b, int k); //add in docs
+
+// numberic methods
+void sort(int *mass, int k);
 long long int max(const long long int *mass, int k);
 long long int min(const long long int *mass, int k);
+
+/*
+ TODO
+ -
+
+*/
+
 #endif
