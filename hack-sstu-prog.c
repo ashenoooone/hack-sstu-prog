@@ -133,17 +133,20 @@ long long int min(const long long int *mass, int k)
     return mini;
 }
 
-int sum(int *mas, int k)
+char replace(char *s, int k, char b, char z)
 {
-    /* Функция нахождения суммы всех элементов массива целочисленного типа.
-      Аналог функции sum() в Python.
-      :mas - указатель на массив;
-      :k - длинна массива;
+    /* Функция замены одного символа на другой во всей строке.
+      Аналог функции replace() в Python.
+      :s - строка в которой нужно заменять символ;
+      :k - длинна этой строки;
+      :b - символ который нужно заменить;
+      :z - символ на который будем заменять;
     */
-    long long int res = 0;
     for (int i = 0; i < k; i++)
     {
-        res += mas[i];
+        if (s[i] = b)
+        {
+            s[i] = z;
+        }
     }
-    return res;
 }
