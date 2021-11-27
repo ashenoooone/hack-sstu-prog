@@ -1,6 +1,10 @@
+#include <stdbool.h>
+
 #ifndef HACK_SSTU_PROG_H
 #define HACK_SSTU_PROG_H
 
+#define MAX(X,Y) ((X) > (Y) ? (X) : (Y))
+#define ABS(X) ((X) < 0 ? -(X) : (X))
 // string methods
 
 int count_s(const char *mass, char ch);

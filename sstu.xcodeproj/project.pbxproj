@@ -29,6 +29,7 @@
 		742FFCC0274A210E006AA705 /* hack-sstu-prog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hack-sstu-prog.h"; sourceTree = "<group>"; };
 		742FFCC1274A210E006AA705 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		742FFCC2274A210E006AA705 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		74F2DADC27515DE100B7579C /* practical_tasks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = practical_tasks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		742FFCA7274A1E36006AA705 = {
 			isa = PBXGroup;
 			children = (
+				74F2DADC27515DE100B7579C /* practical_tasks */,
 				742FFCBF274A210E006AA705 /* hack-sstu-prog.c */,
 				742FFCC0274A210E006AA705 /* hack-sstu-prog.h */,
 				742FFCC2274A210E006AA705 /* main.c */,
