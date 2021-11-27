@@ -3,11 +3,21 @@
 #ifndef HACK_SSTU_PROG_H
 #define HACK_SSTU_PROG_H
 
+
 #define MAX(X,Y) ((X) > (Y) ? (X) : (Y))
 #define ABS(X) ((X) < 0 ? -(X) : (X))
 // string methods
 
-int count_s(const char *mass, char ch);
+#define count(mass, ch, length) _Generic((mass) ,\
+    char *: count_s, \
+    default: count_i, \
+    float *: count_f) (mass, ch, length)
+
+
+int count_s(const char *mass, char ch, int length);
+int count_f(const float *mass, float ch, int length);
+int count_i(const int *mass, int ch, int length);
+
 void reverse(char *mass);
 void replace(char *mass, char old, char new);
 bool isDigit(char *mass);

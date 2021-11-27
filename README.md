@@ -6,8 +6,9 @@
 3. В основной файл включить библиотеку командой `#include "hack-sstu-prog.h"`
 
 ### Методы библиотеки
+
 #### Строки
-- `int count_s(const char *mass, char ch)` - возвращает количество вхождений элемента в массиве. <br />
+- `int count(const void *mass, void ch, int length)` - возвращает количество вхождений элемента в массиве. Принимает char, int, float. <br />
 - `void reverse(char *mass)` - перестраивает элементы массива в обратном порядке. <br />
 - `void replace(char *mass, char old, char new)` - замена всех вхождений символа *old* на *new*. <br />
 - `void idDigit(char *mass)` - возвращает **true**, если есть хотя бы один символ или все символы являются цифрами, иначе **false**. Не путать с функцией *isdigit*! <br />

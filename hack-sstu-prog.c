@@ -6,15 +6,48 @@
 #include <stdio.h>
 #include "hack-sstu-prog.h"
 
-int count_s(const char *mass, char ch)
+
+
+int count_s(const char *mass, char ch, int length)
 {
-    /* Аналог ондоименной функции из python.
-     Возвращает количество вхождений элемента в массиве.
+    /* Возвращает количество вхождений элемента в массиве.
      :mass - указатель на массив;
-     :ch - символ, вхождения которого нужно посчитать.
+     :ch - символ, вхождение которого нужно посчитать.
      */
     int count = 0;
-    for (int i = 0; i < strlen(mass); i++)
+    for (int i = 0; i < length; i++)
+    {
+        if (mass[i] == ch)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+int count_f(const float *mass, float ch, int length) {
+    /* Возвращает количество вхождений элемента в массиве.
+     :mass - указатель на массив;
+     :ch - вещественное число, вхождение которого нужно посчитать.
+     */
+    int count = 0;
+    for (int i = 0; i < length; i++)
+    {
+        if (mass[i] == ch)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+int count_i(const int *mass, int ch, int length) {
+    /* Возвращает количество вхождений элемента в массиве.
+     :mass - указатель на массив;
+     :ch - число, вхождение которого нужно посчитать.
+     */
+    int count = 0;
+    for (int i = 0; i < length; i++)
     {
         if (mass[i] == ch)
         {
@@ -174,3 +207,5 @@ long long int min(const long long int *mass, int k)
     }
     return mini;
 }
+
+
