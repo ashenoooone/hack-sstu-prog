@@ -16,3 +16,4 @@
 - `void sort(int *mass, int k)` - пузырьковая сортировка. <br />
 - `long long int max(const long long int *mass, int k)` - возвращает максимальный элемент массива. <br />
 - `long long int min (const long long int *mass, int k)` - возвращает минимальный элемент массива. <br />
+- `long long int sum (const int *mass, int k)` - возвращает сумму элементов в массиве. <br />

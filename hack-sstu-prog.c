@@ -151,6 +151,8 @@ int set_cur_array(int *b, int k)
     }
     return k;
 }
+// numberic
+
 
 void sort(int *mass, int k)
 {
@@ -175,7 +177,7 @@ void sort(int *mass, int k)
 long long int max(const long long int *mass, int k)
 {
     /* Возвращает максимальный элемент массива.
-       :mas - указатель на массив;
+       :mass - указатель на массив;
        :k - длинна массива;
     */
 
@@ -194,7 +196,7 @@ long long int min(const long long int *mass, int k)
 {
     /* Функция нахождения минимума в массиве.
      Аналог функции min() в Python.
-    :mas - указатель на массив;
+    :mass - указатель на массив;
     :k - длинна массива;
     */
     long long int mini = LONG_LONG_MAX;
@@ -208,4 +210,16 @@ long long int min(const long long int *mass, int k)
     return mini;
 }
 
-
+long long int sum(const int *mass, int k) {
+    // TODO добавить поддержку float/double через макросы.
+    /* Возвращает сумму элементов в целочисленном массиве.
+     Аналог функции min() в Python.
+    :mass - указатель на массив;
+    :k - длинна массива;
+    */
+    long long int s = 0;
+    for (int i = 0; i<k; i++) {
+        s += mass[i];
+    }
+    return s;
+}
