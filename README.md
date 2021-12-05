@@ -17,3 +17,6 @@
 - `long long int max(const long long int *mass, int k)` - возвращает максимальный элемент массива. <br />
 - `long long int min (const long long int *mass, int k)` - возвращает минимальный элемент массива. <br />
 - `long long int sum (const int *mass, int k)` - возвращает сумму элементов в массиве. <br />
+#### Массивы
+- `int *set_new_array(int *mass, int k)` - создает из массива множество, вощвращает указатель на множество. <br />
+- `int set_cur_array(int *b, int k)` - аналог функции set() из Python, возвращает длину множества <br />
